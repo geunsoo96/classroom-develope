@@ -22,3 +22,14 @@ class NewConstructor {
 
 const newInstance = new NewConstructor(4, "파이리", "불");
 console.log(newInstance);
+
+class pocketmon extends NewConstructor {
+  constructor(id, name, type, pocket) {
+    super(id, name, type);
+    this.pocket = pocket;
+  }
+}
+
+const newPocket = new pocketmon(1, "꼬부기", "물", "포켓몬이다");
+
+console.log(newPocket);
